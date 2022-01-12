@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dashboard/app/src/main/res/drawable/but.xml" value="0.2064814814814815" />
+        <entry key="..\:/Dashboard/app/src/main/res/drawable/button.xml" value="0.2064814814814815" />
         <entry key="..\:/Dashboard/app/src/main/res/drawable/cut_background.xml" value="0.2203125" />
         <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_home.xml" value="0.20833333333333334" />
+        <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_hospital.xml" value="0.2064814814814815" />
+        <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_search.xml" value="0.2064814814814815" />
+        <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_sidebar.xml" value="0.2064814814814815" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dashboard/app/src/main/res/layout/activity_post.xml" value="0.25" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
       </map>
     </option>

@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cut_background"
-    tools:context=".MainActivity"
-    android:id="@+id/relav">
-
+    tools:context=".MainActivity">
     <TextView
         android:id="@+id/textview"
         android:layout_width="wrap_content"
@@ -16,7 +14,9 @@
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/pink"
-        android:layout_margin="12dp"/>
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_marginTop="5dp" />
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -48,12 +48,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_home"/>
+                    android:src="@drawable/ic_search"
+                    android:layout_marginTop="10dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Home"
+                    android:text="Search"
                     android:fontFamily="@font/aclonica"
                     android:textSize="16sp"
                     android:textColor="@color/black"/>
@@ -134,7 +135,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_logout"
+            android:id="@+id/card_post"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
@@ -155,16 +156,17 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_logout"/>
+                    android:src="@drawable/ic_post"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
-                    android:text="Exit"
+                    android:text="Post"
                     android:fontFamily="@font/aclonica"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"/>
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

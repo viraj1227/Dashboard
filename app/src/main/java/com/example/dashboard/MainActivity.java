@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     CardView card_home;
     CardView card_location;
     CardView card_profile;
-    CardView card_logout;
     CardView card_about;
+    CardView card_post;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         card_home = findViewById(R.id.card_home);
         card_location = findViewById(R.id.card_location);
         card_profile = findViewById(R.id.card_profile);
-        card_logout = findViewById(R.id.card_logout);
         card_about = findViewById(R.id.card_about);
+        card_post=findViewById(R.id.card_post);
 
         card_home.setOnClickListener(this);
         card_location.setOnClickListener(this);
         card_profile.setOnClickListener(this);
-        card_logout.setOnClickListener(this);
         card_about.setOnClickListener(this);
+        card_post.setOnClickListener(this);
     }
 
     @Override
@@ -51,6 +51,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.card_profile :
                 i = new Intent(this,Profile.class);
+                startActivity(i);
+                break;
+            case R.id.card_post :
+                i = new Intent(this,Post.class);
                 startActivity(i);
                 break;
             case R.id.card_about :
