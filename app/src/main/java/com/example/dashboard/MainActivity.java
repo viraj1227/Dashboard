@@ -2,62 +2,71 @@ package com.example.dashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    CardView card_home;
-    CardView card_location;
-    CardView card_profile;
-    CardView card_about;
-    CardView card_post;
+    CardView admin_donor;
+    CardView admin_blood_bank;
+    CardView admin_recepient;
+    CardView admin_noti;
+    CardView admin_profile;
+    CardView admin_request;
+    CardView admin_about_us;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        card_home = findViewById(R.id.card_home);
-        card_location = findViewById(R.id.card_location);
-        card_profile = findViewById(R.id.card_profile);
-        card_about = findViewById(R.id.card_about);
-        card_post=findViewById(R.id.card_post);
+        admin_donor = findViewById(R.id.admin_donor);
+        admin_blood_bank = findViewById(R.id.admin_bank);
+        admin_recepient = findViewById(R.id.admin_rec);
+        admin_request = findViewById(R.id.admin_request);
+        admin_noti = findViewById(R.id.admin_noti);
+        admin_profile = findViewById(R.id.admin_profile);
+        admin_about_us = findViewById(R.id.admin_about);
 
-        card_home.setOnClickListener(this);
-        card_location.setOnClickListener(this);
-        card_profile.setOnClickListener(this);
-        card_about.setOnClickListener(this);
-        card_post.setOnClickListener(this);
+        admin_donor.setOnClickListener(this);
+        admin_blood_bank.setOnClickListener(this);
+        admin_recepient.setOnClickListener(this);
+        admin_request.setOnClickListener(this);
+        admin_noti.setOnClickListener(this);
+        admin_profile.setOnClickListener(this);
+        admin_about_us.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         Intent i;
         switch (view.getId()){
-            case R.id.card_home :
-                i = new Intent(this,Home.class);
+            case R.id.admin_donor :
+                i = new Intent(this, Donor.class);
                 startActivity(i);
                 break;
-            case R.id.card_location :
-                i = new Intent(this,Location.class);
+            case R.id.admin_bank:
+                i = new Intent(this, BloodBank.class);
                 startActivity(i);
                 break;
-            case R.id.card_profile :
+            case R.id.admin_rec:
+                i = new Intent(this,Recepient.class);
+                startActivity(i);
+                break;
+            case R.id.admin_request:
+                i = new Intent(this, Request.class);
+                startActivity(i);
+                break;
+            case R.id.admin_noti :
+                i = new Intent(this,Notification.class);
+                startActivity(i);
+                break;
+            case R.id.admin_profile :
                 i = new Intent(this,Profile.class);
                 startActivity(i);
                 break;
-            case R.id.card_post :
-                i = new Intent(this,Post.class);
-                startActivity(i);
-                break;
-            case R.id.card_about :
+            case R.id.admin_about :
                 i = new Intent(this,Aboutus.class);
                 startActivity(i);
                 break;

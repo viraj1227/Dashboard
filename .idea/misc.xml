@@ -10,10 +10,13 @@
         <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_hospital.xml" value="0.2064814814814815" />
         <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_search.xml" value="0.2064814814814815" />
         <entry key="..\:/Dashboard/app/src/main/res/drawable/ic_sidebar.xml" value="0.2064814814814815" />
+        <entry key="..\:/Dashboard/app/src/main/res/font/aclonica.xml" value="0.15925925925925927" />
+        <entry key="..\:/Dashboard/app/src/main/res/layout/activity_aboutus.xml" value="0.12545289855072464" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Dashboard/app/src/main/res/layout/activity_post.xml" value="0.25" />
-        <entry key="..\:/Dashboard/app/src/main/res/layout/activity_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Dashboard/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Dashboard/app/src/main/res/layout/activity_recepient.xml" value="0.1" />
       </map>
     </option>
   </component>

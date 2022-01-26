@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dashboard">
         <activity
-            android:name=".Post"
+            android:name=".Notification"
+            android:exported="true" />
+        <activity
+            android:name=".Recepient"
+            android:exported="true" />
+        <activity
+            android:name=".Request"
             android:exported="true" />
         <activity
             android:name=".Profile"
@@ -19,10 +25,10 @@
             android:name=".Aboutus"
             android:exported="true" />
         <activity
-            android:name=".Location"
+            android:name=".BloodBank"
             android:exported="true" />
         <activity
-            android:name=".Home"
+            android:name=".Donor"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
